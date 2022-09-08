@@ -11,6 +11,9 @@ function onGot(item) {
   if (newloc.includes("m.youtube.com")) {
     newloc = newloc.replace("m.youtube.com", instance);
   }
+  else if (newloc.includes("www.youtube")) {
+    newloc = newloc.replace("www.youtube.com", instance);
+  }
   else if (newloc.includes("youtube")) {
     newloc = newloc.replace("youtube.com", instance);
   }
